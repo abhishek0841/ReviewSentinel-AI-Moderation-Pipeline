@@ -1,4 +1,4 @@
-# run_pipeline.py
+# app.py
 import pandas as pd
 from pipeline.text_cleaning import preprocess_reviews
 from pipeline.violation_detector import detect_violations

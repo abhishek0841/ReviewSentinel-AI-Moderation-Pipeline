@@ -5,7 +5,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 from anomaly_detector import detect_sentiment_anomalies
 
-st.title("📊 Trust & Safety Review Dashboard")
+st.title("📊 AI-Powered Moderation & Sentiment Intelligence System")
 
 df = pd.read_csv("data/processed_reviews.csv")
 anomaly_df = detect_sentiment_anomalies(df)

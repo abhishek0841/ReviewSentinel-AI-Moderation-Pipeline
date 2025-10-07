@@ -1,5 +1,5 @@
 
-# 🛡️ Trust & Safety Review Monitoring Pipeline
+# 🛡️ReviewSentinel | AI-Powered Moderation & Sentiment Intelligence System
 
 A data engineering project simulating how platforms like Google Play or YouTube could monitor user reviews for:
 

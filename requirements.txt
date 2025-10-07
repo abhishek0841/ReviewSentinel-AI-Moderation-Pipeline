@@ -1,0 +1,8 @@
+pandas
+faker
+nltk
+textblob
+prophet
+matplotlib
+seaborn
+streamlit

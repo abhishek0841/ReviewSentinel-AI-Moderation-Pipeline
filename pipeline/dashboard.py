@@ -7,9 +7,16 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-# Import anomaly detector from the package
-from pipeline.anomaly_detector import detect_sentiment_anomalies
+FILE_DIR = os.path.dirname(os.path.abspath(__file__))
+REPO_ROOT = os.path.abspath(os.path.join(FILE_DIR, os.pardir))
+if REPO_ROOT not in sys.path:
+    sys.path.insert(0, REPO_ROOT)
 
+try:
+    from pipeline.anomaly_detector import detect_sentiment_anomalies
+except ModuleNotFoundError:
+    from anomaly_detector import detect_sentiment_anomalies
+    
 st.set_page_config(page_title="ReviewSentinel Dashboard", layout="wide")
 st.title("📊 AI-Powered Moderation & Sentiment Intelligence System")
 
